@@ -9,7 +9,7 @@ Distribuição recomendada: Lubuntu 22.04
 Execute o instalador com o comando abaixo:
 
 ```bash
-curl https://raw.githubusercontent.com/LabRobotica/Linux-Robotico/main/linux-robotico-auto.sh | sudo bash
+curl https://raw.githubusercontent.com/LabRobotica/Linux-Robotico/main/linux-robotico.sh | sudo bash
 ```
 
 Leia atentamente as mensagens do terminal a procura de algum erro, ou para seguir corretamente as instruções.
