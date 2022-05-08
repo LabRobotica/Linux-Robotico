@@ -48,7 +48,7 @@ echo "##										##"
 echo "##                        Instalar Programas Básicos				##"
 echo "##										##"
 echo "####################################################################################"
-sudo apt install git chromium-browser deepin-icon-theme qt5-gtk2-platformtheme gnome-screenshot gedit gparted gimp inkscape vlc unrar curl -y
+sudo apt install git chromium-browser deepin-icon-theme qt5-gtk2-platformtheme gnome-screenshot gedit gparted grub-customizer gimp inkscape vlc unrar curl geany geany-plugins -y
 
 
 clear
