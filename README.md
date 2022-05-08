@@ -30,22 +30,30 @@ sudo apt install curl
 - CoppeliaSim EDU
 - Robix
 
+### IDE's / Editores de texto puro
+- Visual Studio Code
+- Geany
+- Gedit
 
-### Outros programas básicos
-
-- git
-- chromium-browser
+### Personalização
 - deepin-icon-theme
 - qt5-gtk2-platformtheme
-- gnome-screenshot
-- gedit
-- gparted
+
+### Editores de Imagens
 - gimp
 - inkscape
+
+### Ferramentas administrativas
+- geparted
+- grub-customizer
+
+### Outros programas básicos
+- git
+- chromium-browser
+- gnome-screenshot
+- spotify
 - vlc
 - unrar
-- curl
-- Spotify
 
 ### Programas removidos
 
