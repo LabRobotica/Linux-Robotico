@@ -3,7 +3,7 @@
 clear
 echo "####################################################################################"
 echo "##										##"
-echo "##                 Bem vindo a instalação do Linux Robótico 			##"
+echo "##                    Bem vindo a instalação do Ubuntu Robótico                   ##"
 echo "##										##"
 echo "####################################################################################"
 echo ""
@@ -11,7 +11,7 @@ echo ""
 echo ""
 echo ""
 echo ""
-echo "--> Distribuição Linux recomendada:   Lubuntu 22.04 <--"
+echo ""
 echo ""
 echo ""
 echo ""
@@ -20,7 +20,7 @@ echo ""
 echo ""
 echo "####################################################################################"
 echo "##										##"
-echo "##           Removendo programas pré-instalados do Lubuntu 22.04 			##"
+echo "##           Removendo programas pré-instalados CASO seja Lubuntu 22.04           ##"
 echo "##										##"
 echo "####################################################################################"
 echo ""
@@ -63,7 +63,7 @@ echo ""
 sudo apt-get install wget gpg
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
 sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
-sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
+sudo sh -c 'echo "deb [arch=amd64 signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
 rm -f packages.microsoft.gpg
 sudo apt install apt-transport-https
 sudo apt update
@@ -82,8 +82,9 @@ echo "---> Executando passo a passo fornecido pelo desenvolvedor <---"
 echo ""
 curl -sS https://download.spotify.com/debian/pubkey_5E3C45D7B312C643.gpg | sudo apt-key add - 
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
-wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1l-1ubuntu1_amd64.deb
 sudo apt update
+echo "---> Baixando dependência faltante para Ubuntu 22.04 <---"
+wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1l-1ubuntu1_amd64.deb
 sudo apt install spotify-client ./libssl1.1_1.1.1l-1ubuntu1_amd64.deb -y
 rm libssl1.1_1.1.1l-1ubuntu1_amd64.deb
 
@@ -99,7 +100,7 @@ echo "---> Executando passo a passo fornecido pelo desenvolvedor <---"
 echo ""
 sudo apt install gnupg lsb-release
 sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2-testing/ubuntu $(source /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(source /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 sudo apt update
 sudo apt install ros-humble-desktop -y
 source /opt/ros/humble/setup.bash
