@@ -24,9 +24,8 @@ echo "##           Removendo programas pré-instalados CASO seja Lubuntu 22.04  
 echo "##										##"
 echo "####################################################################################"
 echo ""
-if [ $(lsb_release -cs) == 'jammy' ]; then
-  sudo apt autoremove qtpass screengrab 2048-qt quassel transmission-qt transmission-common skanlite picom noblenote compton info -y
-fi
+sudo apt autoremove qtpass screengrab 2048-qt quassel transmission-qt transmission-common skanlite picom noblenote compton info -y
+
 
 set -e #A partir de agora qualquer comando que retorar erro irá encerrar a execução do script
 
@@ -51,7 +50,7 @@ echo "##                        Instalar Programas Básicos				##"
 echo "##										##"
 echo "####################################################################################"
 echo ""
-sudo apt install git chromium-browser arc-theme deepin-icon-theme qt5-gtk2-platformtheme gnome-screenshot gedit gparted gimp inkscape vlc unrar curl geany geany-plugins -y
+sudo apt install lsb-release git chromium-browser arc-theme deepin-icon-theme qt5-gtk2-platformtheme gnome-screenshot gedit gparted gimp inkscape vlc unrar curl geany geany-plugins -y
 
 
 
