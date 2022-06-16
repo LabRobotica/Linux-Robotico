@@ -52,52 +52,55 @@ sudo apt install curl
 
 ## Lista de Programas Instalados
 
+
 ### Programas relacionados a robótica
 
-- ROS2
-  - Humble Hawksbill 2022 LTS
-
-- Gazebo
-  - Classic 11.10.2
-
-- Webots
-  - 2022a
-
-- CoppeliaSim (antigo V-REP)
-  - EDU V4.3.0 rev3
-
-- Robix
-  - Usbor 1.1.0
-
-- RoboDK
-  - 5.4
-
-- RoboAnalyzer
-  - V7.5 (Wine)
+|  Programa     |  Versão                      | 
+|---------------|------------------------------|
+|  ROS2         |  Humble Hawksbill 2022 LTS   |
+|  Gazebo       |  Classic 11.10.2             |
+|  Gazebo       |  Ignition                    |
+|  Webots       |  2022a                       |
+|  CoppeliaSim  |  EDU V4.3.0 rev3             |
+|  Robix        |  Usbor 1.1.0                 | 
+|  RoboDK       |  5.4                         |
+|  RoboAnalyzer |  V7.5 (wine)                 |
 
 
-### IDE's / Editores de texto puro
-- Visual Studio Code
-- Geany
-- Gedit
 
-### Personalização
-- deepin-icon-theme
-- arc-theme
-- qt5-gtk2-platformtheme
+### Programas Extras
 
-### Editores de Imagens/Vetores
-- gimp
-- inkscape
 
-### Ferramentas administrativas
-- gparted
-- grub-customizer
+| IDE's / Editores de texto puro |
+|--------------------------------|
+| Visual Studio Code             |
+| Geany                          |
+| Gedit                          |
 
-### Outros
-- git
-- chromium-browser
-- gnome-screenshot
-- spotify
-- vlc
-- unrar
+
+| Personalização                 |
+|--------------------------------|
+| deepin-icon-theme              |
+| arc-theme                      |
+
+
+| Editores de Imagens/Vetores    |
+|--------------------------------|
+| gimp                           |
+| inkscape                       |
+
+
+| Ferramentas administrativas    |
+|--------------------------------|
+| gparted                        |
+| grub-customizer                |
+
+
+| Outros                         |
+|--------------------------------|
+| git                            |
+| chromium-browser               |
+| gnome-screenshot               |
+| spotify                        |
+| vlc                            |
+| unrar                          |
