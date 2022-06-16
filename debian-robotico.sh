@@ -142,6 +142,7 @@ echo ""
 echo "---> Iniciando instalação <---"
 echo ""
 sudo apt install ./webots_2022a_amd64.deb -y
+rm webots_2022a_amd64.deb
 
 
 
