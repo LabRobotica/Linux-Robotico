@@ -39,7 +39,7 @@ Está em desenvolvimento um script de instação para Arch Linux. Em breve será
 Para distribuições baseadas em Debian/Ubuntu, apenas execute o instalador com o comando abaixo:
 
 ```bash
-curl https://raw.githubusercontent.com/LabRobotica/Linux-Robotico/main/debian-robotico.sh | sudo bash
+curl https://raw.githubusercontent.com/LabRobotica/Linux-Robotico/main/debian-robotico.sh | bash
 ```
 
 Leia atentamente as mensagens do terminal a procura de algum erro, ou para seguir corretamente as instruções.
