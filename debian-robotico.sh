@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e #A partir de agora qualquer comando que retorar erro irá encerrar a execução do script
+
 clear
 echo "####################################################################################"
 echo "##										##"
@@ -17,21 +19,6 @@ echo ""
 echo ""
 echo ""
 echo ""
-echo ""
-echo "####################################################################################"
-echo "##										##"
-echo "##           Removendo programas pré-instalados CASO seja Lubuntu 22.04           ##"
-echo "##										##"
-echo "####################################################################################"
-echo ""
-sudo apt autoremove qtpass screengrab 2048-qt quassel transmission-qt transmission-common skanlite picom noblenote compton info -y
-
-
-set -e #A partir de agora qualquer comando que retorar erro irá encerrar a execução do script
-
-
-
-clear
 echo "####################################################################################"
 echo "##										##"
 echo "##                       Atualizando Sistema Operacional				##"
