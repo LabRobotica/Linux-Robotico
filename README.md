@@ -58,14 +58,15 @@ sudo apt install curl
 |  Programa     |  Versão                      | 
 |---------------|------------------------------|
 |  ROS2         |  Humble Hawksbill 2022 LTS   |
-|  Gazebo       |  Classic 11.10.2             |
-|  Gazebo       |  Ignition                    |
+|  Gazebo       |  Classic 11.10.2*            |
+|  Gazebo       |  Ignition Fortress LTS       |
 |  Webots       |  2022a                       |
 |  CoppeliaSim  |  EDU V4.3.0 rev3             |
 |  Robix        |  Usbor 1.1.0                 | 
 |  RoboDK       |  5.4                         |
 |  RoboAnalyzer |  V7.5 (wine)                 |
 
+*No Debian Bullseye a versão é 11.1.0
 
 
 ### Programas Extras
