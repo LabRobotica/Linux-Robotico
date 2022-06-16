@@ -61,7 +61,7 @@ sudo apt install curl
 |  Gazebo       |  Classic 11.10.2*            |
 |  Gazebo       |  Ignition Fortress LTS       |
 |  Webots       |  2022a                       |
-|  CoppeliaSim  |  EDU V4.3.0 rev3             |
+|  CoppeliaSim  |  EDU V4.3.0                  |
 |  Robix        |  Usbor 1.1.0                 | 
 |  RoboDK       |  5.4                         |
 |  RoboAnalyzer |  V7.5 (wine)                 |
