@@ -6,27 +6,27 @@ Script para aperfeiçoar sistemas operacionais baseados em linux criando um ambi
 ## Recomendações e discussões
 
 - Distribuição recomendada: [Lubuntu 22.04](https://cdimage.ubuntu.com/lubuntu/releases/22.04/release/lubuntu-22.04-desktop-amd64.iso) [(Download via Torrent)](https://cdimage.ubuntu.com/lubuntu/releases/22.04/release/lubuntu-22.04-desktop-amd64.iso.torrent)
-- Ambiente de desktop recomendado: [LXDE]()
+- Ambiente de desktop recomendado: [LXDE (com Ubuntu)](https://github.com/LabRobotica/LubuntuLXDE)
 
 Para mais detalhes leiam as discussões abaixo.
 
 
-### Sistemas baseados em Debian: Ubuntu e suas flavour's
+### Distribuições baseadas em Debian: Ubuntu e suas flavour's
 
-O [Sistema Operacional Robótico (ROS)](http://docs.ros.org/en/humble/index.html) é desenvolvido como principal "alvo" o [Ubuntu](https://ubuntu.com/), portanto é o sistema mais fácil de instalar o ROS (Binarios disponíveis em repositório), é o sistema com mais suporte e menor probabilidade de bugs. 
+O [Sistema Operacional Robótico (ROS)](http://docs.ros.org/en/humble/index.html) é desenvolvido como principal "alvo" o [Ubuntu](https://ubuntu.com/), portanto é a distribuição mais fácil de instalar o ROS (Binarios disponíveis em repositório), com mais suporte e com menor probabilidade de bugs. 
 
-Apesar disso, o Ubuntu vem com um ambiente desktop relativamente pesado, que é o [GNOME](https://www.gnome.org/), a qual não agrega em nada a uma simulação robótica, ou a um ambiente de desenvolvimento robótico. Felizmente existem as flavours do Ubuntu que são basicamente o Ubuntu com outros ambiente desktop's.
+Apesar disso, o Ubuntu vem com um ambiente desktop relativamente pesado para alguns computadores, que é o [GNOME](https://www.gnome.org/), especialmente quando se vai executar ao mesmo tempo uma simulação em tempo real, ou programas de modalagem 3D. Se for o seu caso, felizmente existem as flavour's do Ubuntu que são basicamente o Ubuntu com outros ambiente desktop's.
 
-O ambiente desktop mais leve do mundo linux é o [LXDE](http://www.lxde.org/) que vinha com a flavour [Lubuntu](https://lubuntu.me/), mas a partir da versão 18.10 esta flavour passou a utilizar o ambiente desktop [LXQt](https://lxqt-project.org/), e hoje infelizmente não existe uma flavour oficial do Ubuntu para LXDE. Caso você queira, ou realmente tenha a necessidade de utilizar o ambiente desktop LXDE, você pode fazer isso fácilmente: primeiro instalando o Lubuntu e depois executando [este script](). OBS: Você pode realizar a instalação do Linux Robótico primeiro, caso sinta a nessecidade (ou vontade de experimentar) executar o script de alteração de ambiente desktop.
+O ambiente desktop mais leve do mundo linux é o [LXDE](http://www.lxde.org/) que vinha com a flavour [Lubuntu](https://lubuntu.me/), mas a partir da versão 18.10 esta flavour passou a utilizar o ambiente desktop [LXQt](https://lxqt-project.org/), e hoje infelizmente não existe uma flavour oficial do Ubuntu para LXDE. Caso você queira/precise utilizar o ambiente desktop LXDE devido a limitações de processamento/memória do seu computador, você pode fazer isso fácilmente instalando o Lubuntu e depois executando [este passo a passo](https://github.com/LabRobotica/LubuntuLXDE). OBS: Você pode realizar a instalação do Linux Robótico primeiro, caso sinta a nessecidade (ou vontade de experimentar), basta executar o passo a passo para alterar o ambiente de desktop.
 
-Existe um outro ambiente deskop tão leve quanto LXQt, é chamado [XFCE](https://www.xfce.org/) e vem com a flavour [Xubuntu](https://xubuntu.org/). Existe um ambiente desktop muito famoso chamado [KDE](https://kde.org/) e vem com a flavour [Kubuntu](https://kubuntu.org/). Fica ao seu critério escolher de acordo com suas necessidades, gostos e capacidade de processamento/memória.
+Existe um outro ambiente desktop tão leve quanto LXQt (não confunda com LXDE), é chamado [XFCE](https://www.xfce.org/) e vem com a flavour [Xubuntu](https://xubuntu.org/). Existe um ambiente desktop muito famoso chamado [KDE](https://kde.org/) e vem com a flavour [Kubuntu](https://kubuntu.org/). Fica ao seu critério escolher de acordo com suas necessidades, gostos e capacidade de processamento/memória.
 
 
 #### Debian
 
 Como explicado anteriormente, o ROS é desenvolvido como alvo de instalação o Ubuntu, logo o suporte ao Debian é precário, apesar de ser possível instalar nele.
 
-No caso, este script não irá tentar instalar o ROS caso o sistema operacional seja um Debian, ou algum outro sistema baseado no Debian diferente do Ubuntu Jammy. Mas o script irá **tentar** instalar o restante dos programas.
+No caso, este script não irá tentar instalar o ROS caso a distribuição seja o Debian (ou algum outro sistema baseado no Debian diferente do Ubuntu Jammy e derivados) mas irá pelo menos **tentar** instalar o restante dos programas.
 
 
 ### Arch Linux
@@ -36,7 +36,7 @@ Está em desenvolvimento um script de instação para Arch Linux. Em breve será
 
 ## Instalação automática
 
-Para sistemas baseados em Debian/Ubuntu, apenas execute o instalador com o comando abaixo:
+Para distribuições baseadas em Debian/Ubuntu, apenas execute o instalador com o comando abaixo:
 
 ```bash
 curl https://raw.githubusercontent.com/LabRobotica/Linux-Robotico/main/debian-robotico.sh | sudo bash
@@ -83,6 +83,7 @@ sudo apt install curl
 
 ### Personalização
 - deepin-icon-theme
+- arc-theme
 - qt5-gtk2-platformtheme
 
 ### Editores de Imagens/Vetores
@@ -100,19 +101,3 @@ sudo apt install curl
 - spotify
 - vlc
 - unrar
-
-## Lista de programas removidos
-
-No caso do sistema operacional ser o Lubuntu 22.04 os seguintes programas serão removidos:
-
-- qtpass
--	screengrab
--	2048-qt
--	quassel
-- transmission-qt
-- transmission-common
-- skanlite
-- picom
-- noblenote
-- compton
-- info
