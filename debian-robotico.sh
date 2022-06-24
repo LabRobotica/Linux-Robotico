@@ -155,7 +155,7 @@ echo "##########################################################################
 echo ""
 echo "---> Executando instalador online <---"
 echo ""
-curl https://raw.githubusercontent.com/LabRobotica/CoppeliaSim-Linux-Install/main/CoppeliaSim-Linux-Install.sh | sudo bash
+curl https://raw.githubusercontent.com/LabRobotica/CoppeliaSim-Linux-Install/main/CoppeliaSim-Linux-Install.sh | bash
 
 
 
@@ -168,4 +168,4 @@ echo "##########################################################################
 echo ""
 echo "---> Executando instalador online <---"
 echo ""
-curl https://raw.githubusercontent.com/LabRobotica/RobixLinux/main/robix-debian.sh | sudo bash
+curl https://raw.githubusercontent.com/LabRobotica/RobixLinux/main/robix-debian.sh | bash
