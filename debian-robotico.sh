@@ -169,3 +169,16 @@ echo ""
 echo "---> Executando instalador online <---"
 echo ""
 curl https://raw.githubusercontent.com/LabRobotica/RobixLinux/main/robix-debian.sh | bash
+
+
+
+clear
+echo "####################################################################################"
+echo "##										##"
+echo "##                          Instalando RoboDK				  ##"
+echo "##										##"
+echo "####################################################################################"
+echo ""
+echo "---> Executando instalador online <---"
+echo ""
+curl https://raw.githubusercontent.com/LabRobotica/RoboDK-Install/main/RoboDK-install.sh | bash
